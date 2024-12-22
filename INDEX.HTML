@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharanya's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Base Reset */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(135deg, #d943aa, #ef9dda);
+            padding: 30px;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before, header::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            animation: float 5s infinite ease-in-out;
+        }
+
+        header::before {
+            width: 300px;
+            height: 300px;
+            top: -150px;
+            left: -100px;
+        }
+
+        header::after {
+            width: 200px;
+            height: 200px;
+            bottom: -100px;
+            right: -50px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(15px);
+            }
+        }
+
+        /* Navigation Styling */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: #d943aa;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #c8e6c9;
+        }
+
+        /* Main Content Styling */
+        main {
+            text-align: center;
+            padding: 60px 20px;
+            background: #f5f5f5;
+            min-height: 70vh;
+        }
+
+        main h2 {
+            font-size: 2.4em;
+            color: #d943aa;
+            margin-bottom: 15px;
+        }
+
+        main p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 650px;
+            margin: 20px auto;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            margin-top: 30px;
+        }
+
+        .cta-buttons a {
+            text-decoration: none;
+            background: linear-gradient(135deg, #d943aa, #ef9dda);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            margin: 10px;
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .cta-buttons a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Decorative Dots */
+        .decorative-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .decorative-dots div {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #c8e6c9;
+            margin: 0 10px;
+            animation: bounce 2s infinite;
+        }
+
+        .decorative-dots div:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .decorative-dots div:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #d943aa;
+            color: white;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my skills, certifications, and projects</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="biodata.html">Bio-data</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Hello, I'm Sharanya Kalkunte</h2>
+        <p>
+            A passionate and driven Data Analyst with expertise in tools like SQL, Tableau, and R. With certifications and hands-on experience in data visualization, analysis, and machine learning, I'm excited to showcase my journey. Dive into my projects and accomplishments to learn more about my work!
+        </p>
+        <div class="cta-buttons">
+            <a href="resume.html">View Resume</a>
+            <a href="biodata.html">View Bio-data</a>
+        </div>
+        <div class="decorative-dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </main>
+
+</body>
+</html>
